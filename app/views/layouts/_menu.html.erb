@@ -1,0 +1,52 @@
+<!-- <nav class="navbar navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Vacunacion</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse show" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link" href="/products">Productos en stock</a>
+        <a class="nav-link" href="/orders">pedidos</a>
+
+      </div>
+    </div>
+  </div>
+</nav> -->
+
+
+
+<nav class="navbar navbar-expand-xl navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Servicios</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarDark" aria-controls="navbarDark" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse show" id="navbarDark">
+      <ul class="navbar-nav me-auto mb-2 mb-xl-0">
+        <li class="nav-item">
+          <%# <%= link_to "Tipos de Centros Médicos", medical_center_types_path, class: 'nav-link' if can? :manage, Medical_Center_Type %>
+        </li>
+        <li class="nav-item">
+          <%# <%= link_to "Centros Médicos", medical_centers_path, class: 'nav-link' if can? :manage, Medical_center %>
+        </li>
+        <li class="nav-item">
+          <%# <%= link_to "Tipos de Trabajadores", worker_types_path, class: 'nav-link' if can? :manage, Worker_Type %>
+        </li>
+        <li class="nav-item">
+          <%# <%= link_to "Trabajadores", workers_path, class: 'nav-link' if can? :manage, Worker %>
+        </li>
+        <li class="nav-item">
+          <%# <%= link_to "Consultas", appointments_path, class: 'nav-link' if can? :manage, Appointment %>
+        </li>
+        <li class="nav-item">
+          <%# <%= link_to "Guardias", guards_path, class: 'nav-link' if can? :manage, Guard %>
+        </li>
+
+      </ul>
+      <form class="d-flex">
+        <a class="nav-link active" href="/users/sign_in">Login</a>
+      </form>
+    </div>
+  </div>
+</nav>
